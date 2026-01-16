@@ -1,8 +1,8 @@
 from mpmath import mp
-def pi_dig(x, d):
+def pi_dig(d):
      summed = mp.mpf(0)
      mp.dps = d
-     for i in range(d + 1):
+     for i in range(d + 10):
          t1 = mp.mpf(4/(8*i+1))
          t2 = mp.mpf(2/(8*i+4))
          t3 = mp.mpf(1/(8*i+5))
@@ -14,4 +14,4 @@ def pi_dig(x, d):
          
 print("Welcome to FastPI!")
 d = int(input("Enter digits: "))
-pi_dig(1, d)
+pi_dig(d)
