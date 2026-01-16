@@ -10,7 +10,7 @@ def pi_dig(x, d):
          summed += mp.mpf(1/16**i*(t1-t2-t3-t4))
          print(summed)
          with open("pi.txt", "w") as f:
-          f.write(summed)
+          f.write(str(summed))
          
 print("Welcome to FastPI!")
 d = int(input("Enter digits: "))
